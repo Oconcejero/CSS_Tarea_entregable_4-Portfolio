@@ -1,0 +1,60 @@
+
+
+@mixin reset-list() {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@mixin button($bg_color: $colordark, $color:white) {
+    display: inline-block;
+    padding: 15px 30px;
+    color: $color;
+    background-color: $bg_color;
+    text-decoration: none;
+    border-radius: 2rem;
+    font-weight: bold;
+}
+
+@mixin button-gradient01() {
+    @include button();
+    background-image: $gradient-01;
+}
+
+@mixin button-gradient02() {
+    @include button();
+    background-image: $gradient-02;
+}
+
+@mixin button-link () {
+    color: rgb(180, 42, 127);
+    font-weight: bold;
+    text-decoration: none;
+}
+/*----------*/
+@mixin breakpoint($bp) {
+  @if $bp == tablet {
+    @media (min-width: $bp-tablet) {
+      @content;
+    }
+  }
+
+  @if $bp == tablethorizontal {
+    @media (min-width: $bp-tablet-horizontal) {
+      @content;
+    }
+  }
+
+  @if $bp == desktop {
+    @media (min-width: $bp-desktop) {
+      @content;
+    }
+  }
+
+  @if $bp == desktopxl {
+    @media (min-width: $bp-desktop-xl) {
+      @content;
+    }
+  }
+}
+

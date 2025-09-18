@@ -1,0 +1,443 @@
+/*! HTML5 Boilerplate v9.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .visually-hidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * The use of `table` rather than `block` is only necessary if using
+ * `::before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+/*PROYECTO*/
+:root {
+  --color1:#2E2F38;
+  --color2:#FA504D;
+
+}
+
+body::before{
+  content: "";
+  width: 45%;
+  background-color: var(--color1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+  max-width: 1600px;
+}
+
+
+
+.container header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 10px;
+  margin-top: 25px;
+}
+
+.principal .central {
+  display: flex;
+  justify-content: center;
+  margin-right: 300px;
+  gap: 50px;
+}
+
+.principal ul {
+  list-style: none;
+}
+
+.container .login ul{
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 50px;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+.logo {
+  width: 150px;
+}
+
+.central li a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+  list-style: none;
+  color: var(--color1);
+}
+
+.login_top li a {
+  text-decoration: none;
+  color:white;
+}
+
+.hero h1{
+  font-family: "Belgrano", serif;
+  font-weight: 400;
+  font-size: 75px;
+  max-width: 60%;
+  margin-top: 100px;
+  line-height: 1.2;
+  margin-bottom: 0;
+  
+}
+
+.hero p{
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.bottons {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+.bottons a {
+  text-decoration: none;
+  color: var(--color1);
+}
+.bottons .explorar{
+  display: inline-block;
+  background-color: var(--color2);
+  color: white;
+  padding: 10px 40px;
+  margin-right: 25px;
+}
+
+h2{
+  font-family: "Belgrano", serif;
+  font-weight: 500;
+  font-size: 35px;
+  margin-bottom: 0;
+}
+
+.features img {
+  width: 500px;
+  padding: 0;
+  margin: 0;
+}
+
+.features{
+  display: flex;
+  justify-content: flex-start;
+  
+}
+
+.cuadro {
+  padding-left: 50px;
+}
+
+.login .salir{
+  display: inline-block;
+  background-color: var(--color2);
+  padding: 10px 20px;
+}
+
+.gris .foto_marco {
+  position: absolute;
+  top: 80px;
+  right: 50px;
+  height: 700px;
+}
+
+.datos {
+  position: absolute;
+  display: inline-block;
+  background-color: white;
+  top: 600px;
+  right: 75px;
+  padding: 10px 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 445px;
+  height: 150px;
+}
+
+.datos_01{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+.datos_01 img{
+  width: 50px;
+  height: 50px;
+}
+.datos_01 h3{
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 14px;
+  margin: 0;
+  padding-bottom: 0px;
+  height: 30px;
+}
+.datos_01 h2{
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.datos_02{
+  justify-content: flex-end;
+}
+.datos_02 h3{
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 14px;
+}
+
+.datos_02 h2{
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+

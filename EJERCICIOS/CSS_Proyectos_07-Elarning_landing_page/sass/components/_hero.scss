@@ -1,0 +1,68 @@
+.hero{
+    &_tittle {
+        margin-bottom: 27px;
+        font-size: 40px;
+        font-weight: 900;
+        line-height: 50px;
+    }
+    &_subtitle {
+        margin-bottom: 27px;
+        color: $colorgrey;
+        font-size: 20px;
+        line-height: 27px;
+    }
+    &_buttons {
+        margin-bottom: 65px;
+    }
+    &_img {
+        text-align: center;
+        width: 80%;
+        margin-left: 10%;
+        position: relative;
+    }
+    &_number {
+        display: inline-block;
+        width: max-content;
+        background-color: white;
+        color: black;
+        padding: 5px;
+        gap: 10px;
+        text-align: left;
+        position: absolute;
+        line-height: 7px;
+        box-shadow: 0 5px 1rem $colorgrey;
+        span {
+            display: block;
+        }
+        &-text {
+            font-size: 14px;
+        }
+        &-number {
+            font-size: 35px;
+            font-weight: 900;
+            margin-bottom: 15px;
+        }
+        &_01 {
+            padding: 7px 20px 2px 20px;
+            top: 0;
+            right: 0;
+            position: absolute;
+            border-radius: 10px;
+            padding-bottom: 10px;
+        }
+        &_02 {
+            padding: 16px 45px 16px 20px;
+            bottom: 0;
+            left: 0;
+            position: absolute;
+            border-radius: 10px;
+        }
+       
+    }
+    .container {
+        @include breakpoint(tablet) {
+            display: flex;
+        }
+        
+    }
+}
