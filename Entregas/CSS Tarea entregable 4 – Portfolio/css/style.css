@@ -61,15 +61,11 @@ main .hero_01 h1 {
   text-align: center;
   line-height: 40px;
 }
-main .hero_01 h1::after {
-  position: absolute;
-  top: 580px;
-  left: 120px;
-  content: "";
-  display: inline-block;
-  width: 235px;
-  height: 5px;
-  background-color: #4EE1A0;
+main .hero_01 h1 span {
+  text-decoration-line: underline;
+  text-decoration-color: #4EE1A0;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 4px;
 }
 main .hero_01 .subtitle {
   margin-top: 30px;
@@ -95,16 +91,13 @@ main .hero_01 .contact a {
   text-align: center;
   text-decoration: none;
   letter-spacing: 3px;
+  text-decoration-line: underline;
+  text-decoration-color: #4EE1A0;
+  text-underline-offset: 15px;
+  text-decoration-thickness: 3px;
 }
-main .hero_01 .contact::after {
-  position: absolute;
-  top: 780px;
-  left: 135px;
-  content: "";
-  display: inline-block;
-  width: 140px;
-  height: 2px;
-  background-color: #4EE1A0;
+main .hero_01 .contact a:hover {
+  color: #4EE1A0;
 }
 main .lenguajes::before {
   display: flex;
@@ -181,16 +174,13 @@ main .header_projects .contact a {
   text-align: center;
   text-decoration: none;
   letter-spacing: 3px;
+  text-decoration-line: underline;
+  text-decoration-color: #4EE1A0;
+  text-underline-offset: 15px;
+  text-decoration-thickness: 3px;
 }
-main .header_projects .contact::after {
-  position: absolute;
-  top: 1665px;
-  left: 245px;
-  content: "";
-  display: inline-block;
-  width: 135px;
-  height: 2px;
-  background-color: #4EE1A0;
+main .header_projects .contact a:hover {
+  color: #4EE1A0;
 }
 main .articulos img {
   max-width: 100%;
@@ -230,26 +220,13 @@ main .articulos .codes a {
   font-weight: 700;
   color: #d9d9d9;
   text-decoration: none;
+  text-decoration-line: underline;
+  text-decoration-color: #4EE1A0;
+  text-underline-offset: 15px;
+  text-decoration-thickness: 3px;
 }
-main .articulos .button_project::after {
-  content: "";
-  position: absolute;
-  top: 30px;
-  left: -5px;
-  display: inline-block;
-  width: 140px;
-  height: 2px;
-  background-color: #4EE1A0;
-}
-main .articulos .button_code::after {
-  content: "";
-  position: absolute;
-  top: 30px;
-  left: 185px;
-  display: inline-block;
-  width: 100px;
-  height: 2px;
-  background-color: #4EE1A0;
+main .articulos .codes a:hover {
+  color: #4EE1A0;
 }
 main .contact {
   margin-top: 100px;
@@ -301,16 +278,13 @@ main .contact .formulario .button_contact {
   letter-spacing: 2px;
   left: 200px;
   top: 325px;
+  text-decoration-line: underline;
+  text-decoration-color: #4EE1A0;
+  text-underline-offset: 15px;
+  text-decoration-thickness: 3px;
 }
-main .contact .formulario .button_contact::after {
-  content: "";
-  position: relative;
-  top: 0px;
-  left: 0px;
-  display: inline-block;
-  width: 150px;
-  height: 2px;
-  background-color: #4EE1A0;
+main .contact .formulario .button_contact:hover {
+  color: #4EE1A0;
 }
 main .contact .formulario::after {
   display: flex;
@@ -336,19 +310,21 @@ main .contact .formulario form input {
   border: none;
   background-color: #242424;
   border-bottom: 2px solid #d9d9d9;
+  color: #d9d9d9;
 }
 main .contact .formulario form input:focus {
   outline: none;
-  background-color: #151515;
+  border-bottom: 2px solid #4EE1A0;
 }
 main .contact .formulario form textarea {
   border: none;
   background-color: #242424;
   border-bottom: 2px solid #d9d9d9;
+  color: #d9d9d9;
 }
 main .contact .formulario form textarea:focus {
   outline: none;
-  background-color: #151515;
+  border-bottom: 2px solid #4EE1A0;
 }
 main .contact .logotipo_footer {
   display: flex;
@@ -367,6 +343,7 @@ main .contact .social_footer {
 .decoration_footer {
   position: absolute;
   bottom: -4250px;
+  pointer-events: none;
 }
 
 .decoration_projects {

@@ -24,17 +24,12 @@ main {
             color: white;
             text-align: center;
             line-height: 40px;
-        }
-        h1::after {
-            position: absolute;
-            top: 580px;
-            left: 120px;
-            content: "";
-            display: inline-block;
-            width: 235px;
-            height: 5px;
-            background-color: $marine;
-
+            span {
+                text-decoration-line: underline;
+                text-decoration-color: $marine;
+                text-underline-offset: 10px;
+                text-decoration-thickness: 4px;
+            }
         }
         .subtitle {
             margin-top: 30px;
@@ -59,17 +54,14 @@ main {
                 text-align: center;
                 text-decoration: none;
                 letter-spacing: 3px;
+                text-decoration-line: underline;
+                text-decoration-color: $marine;
+                text-underline-offset: 15px;
+                text-decoration-thickness: 3px;
             }
-        }
-        .contact::after {
-            position: absolute;
-            top: 780px;
-            left: 135px;
-            content: "";
-            display: inline-block;
-            width: 140px;
-            height: 2px;
-            background-color: $marine;
+            a:hover {
+                color: $marine;
+            }
         }
     }
     .lenguajes::before {
@@ -145,17 +137,14 @@ main {
                 text-align: center;
                 text-decoration: none;
                 letter-spacing: 3px;
+                text-decoration-line: underline;
+                text-decoration-color: $marine;
+                text-underline-offset: 15px;
+                text-decoration-thickness: 3px;
             }
-        }
-        .contact::after {
-            position: absolute;
-            top: 1665px;
-            left: 245px;
-            content: "";
-            display: inline-block;
-            width: 135px;
-            height: 2px;
-            background-color: $marine;
+            a:hover {
+                color: $marine;
+            }
         }
     }
     .articulos {
@@ -197,27 +186,14 @@ main {
                 font-weight: 700;
                 color: $greylight;
                 text-decoration: none;
+                text-decoration-line: underline;
+                text-decoration-color: $marine;
+                text-underline-offset: 15px;
+                text-decoration-thickness: 3px;
                 }
-        }
-        .button_project::after {
-            content: "";
-            position: absolute;
-            top: 30px;
-            left: -5px;
-            display: inline-block;
-            width: 140px;
-            height: 2px;
-            background-color: $marine;
-        }
-        .button_code::after {
-            content: "";
-            position: absolute;
-            top: 30px;
-            left: 185px;
-            display: inline-block;
-            width: 100px;
-            height: 2px;
-            background-color: $marine;
+                a:hover {
+                    color: $marine;
+                }
         }
     }
     .contact {
@@ -268,16 +244,13 @@ main {
                 letter-spacing: 2px;
                 left: 200px;
                 top: 325px;
+                text-decoration-line: underline;
+                text-decoration-color: $marine;
+                text-underline-offset: 15px;
+                text-decoration-thickness: 3px;
             }
-            .button_contact::after {
-                content: "";
-                position: relative;
-                top: 0px;
-                left: 0px;
-                display: inline-block;
-                width: 150px;
-                height: 2px;
-                background-color: $marine;
+            .button_contact:hover {
+                color: $marine;
             }
         }
         .formulario::after {
@@ -303,19 +276,21 @@ main {
                 border: none;
                 background-color: $greymedium;
                 border-bottom: 2px solid $greylight;
+                color: $greylight;
             }
             input:focus {
                 outline: none;
-                background-color: $greydark;
+                border-bottom: 2px solid $marine;
             }
             textarea {
                 border: none;
                 background-color: $greymedium;
                 border-bottom: 2px solid $greylight;
+                color: $greylight;
             }
             textarea:focus {
                 outline: none;
-                background-color: $greydark;
+                border-bottom: 2px solid $marine;
             }
         }
         .logotipo_footer {
@@ -336,6 +311,7 @@ main {
 .decoration_footer {
     position: absolute;
     bottom: -4250px;
+    pointer-events: none;
 }
 .decoration_projects {
     position: absolute;
