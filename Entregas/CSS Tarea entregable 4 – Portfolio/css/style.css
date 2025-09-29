@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*COLORES*/
 /*responsive*/
 * {
@@ -85,21 +84,21 @@ main .hero_01 .subtitle {
 main .hero_01 .contact {
   background-color: #151515;
   border: none;
-  margin-top: 30px;
+  margin-top: 0;
 }
 main .hero_01 .contact a {
   font-family: "Space Grotesk", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-optical-sizing: auto;
   font-weight: 700;
-  color: white;
+  color: #d9d9d9;
   text-align: center;
   text-decoration: none;
   letter-spacing: 3px;
 }
 main .hero_01 .contact::after {
   position: absolute;
-  top: 765px;
+  top: 780px;
   left: 135px;
   content: "";
   display: inline-block;
@@ -122,7 +121,7 @@ main .lenguajes {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 150px;
+  margin-top: 100px;
 }
 main .lenguajes h2 {
   font-family: "Space Grotesk", sans-serif;
@@ -156,6 +155,7 @@ main .lenguajes::after {
 main .header_projects {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   margin-top: 120px;
 }
 main .header_projects h2 {
@@ -170,25 +170,25 @@ main .header_projects h2 {
 main .header_projects .contact {
   background-color: #151515;
   border: none;
-  margin-top: 30px;
+  margin-top: -10px;
 }
 main .header_projects .contact a {
   font-family: "Space Grotesk", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-optical-sizing: auto;
   font-weight: 700;
-  color: white;
+  color: #d9d9d9;
   text-align: center;
   text-decoration: none;
   letter-spacing: 3px;
 }
 main .header_projects .contact::after {
   position: absolute;
-  top: 1700px;
-  left: 255px;
+  top: 1665px;
+  left: 245px;
   content: "";
   display: inline-block;
-  width: 140px;
+  width: 135px;
   height: 2px;
   background-color: #4EE1A0;
 }
@@ -219,7 +219,7 @@ main .articulos .buttons a {
 }
 main .articulos .codes {
   display: flex;
-  gap: 20px;
+  gap: 50px;
   margin-top: 20px;
   position: relative;
 }
@@ -231,7 +231,7 @@ main .articulos .codes a {
   color: #d9d9d9;
   text-decoration: none;
 }
-main .articulos .codes::after {
+main .articulos .button_project::after {
   content: "";
   position: absolute;
   top: 30px;
@@ -241,8 +241,15 @@ main .articulos .codes::after {
   height: 2px;
   background-color: #4EE1A0;
 }
-main .articulos {
-  /*Soy incapaz, por más info que busco, de colocar otra línea debajo de cada view code*/
+main .articulos .button_code::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 185px;
+  display: inline-block;
+  width: 100px;
+  height: 2px;
+  background-color: #4EE1A0;
 }
 main .contact {
   margin-top: 100px;
@@ -275,24 +282,98 @@ main .contact .contact_info p {
 }
 main .contact .formulario {
   margin-top: 50px;
+  position: relative;
 }
 main .contact .formulario label {
   font-family: "Space Grotesk", sans-serif;
   font-size: 16px;
+  font-weight: 100;
   color: #d9d9d9;
+}
+main .contact .formulario .button_contact {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  background-color: #242424;
+  border: none;
+  position: absolute;
+  letter-spacing: 2px;
+  left: 200px;
+  top: 325px;
+}
+main .contact .formulario .button_contact::after {
+  content: "";
+  position: relative;
+  top: 0px;
+  left: 0px;
+  display: inline-block;
+  width: 150px;
+  height: 2px;
+  background-color: #4EE1A0;
+}
+main .contact .formulario::after {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 450px;
+  content: "";
+  display: inline-block;
+  width: 370px;
+  height: 1px;
+  background-color: white;
 }
 main .contact .formulario form {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
+  gap: 25px;
+}
+main .contact .formulario form label {
+  padding-left: 25px;
 }
 main .contact .formulario form input {
   border: none;
   background-color: #242424;
+  border-bottom: 2px solid #d9d9d9;
+}
+main .contact .formulario form input:focus {
+  outline: none;
+  background-color: #151515;
 }
 main .contact .formulario form textarea {
   border: none;
   background-color: #242424;
+  border-bottom: 2px solid #d9d9d9;
+}
+main .contact .formulario form textarea:focus {
+  outline: none;
+  background-color: #151515;
+}
+main .contact .logotipo_footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 250px;
+}
+main .contact .social_footer {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 35px;
+  padding-bottom: 50px;
+}
+
+/*Entiendo que esta no es la mejor forma de hacer esto*/
+.decoration_footer {
+  position: absolute;
+  bottom: -4250px;
+}
+
+.decoration_projects {
+  position: absolute;
+  transform: scaleX(-1);
+  right: 0;
+  bottom: -700px;
 }
 
 body {

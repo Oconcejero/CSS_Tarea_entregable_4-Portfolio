@@ -49,13 +49,13 @@ main {
         .contact {
             background-color: $greydark;
             border: none;
-            margin-top: 30px;
+            margin-top: 0;
             a {
                 font-family: "Space Grotesk", sans-serif;
-                font-size: 18px;
+                font-size: 16px;
                 font-optical-sizing: auto;
                 font-weight: 700;
-                color: white;
+                color: $greylight;
                 text-align: center;
                 text-decoration: none;
                 letter-spacing: 3px;
@@ -63,7 +63,7 @@ main {
         }
         .contact::after {
             position: absolute;
-            top: 765px;
+            top: 780px;
             left: 135px;
             content: "";
             display: inline-block;
@@ -87,7 +87,7 @@ main {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 150px;
+        margin-top: 100px;
         h2 {
             font-family: "Space Grotesk", sans-serif;
             font-size: 32px;
@@ -121,6 +121,7 @@ main {
     .header_projects {
         display: flex;
         justify-content: space-between;
+        align-items: flex-start;
         margin-top: 120px;
         h2 {
             font-family: "Space Grotesk", sans-serif;
@@ -134,13 +135,13 @@ main {
         .contact {
             background-color: $greydark;
             border: none;
-            margin-top: 30px;
+            margin-top: -10px;
             a {
                 font-family: "Space Grotesk", sans-serif;
-                font-size: 18px;
+                font-size: 16px;
                 font-optical-sizing: auto;
                 font-weight: 700;
-                color: white;
+                color: $greylight;
                 text-align: center;
                 text-decoration: none;
                 letter-spacing: 3px;
@@ -148,11 +149,11 @@ main {
         }
         .contact::after {
             position: absolute;
-            top: 1700px;
-            left: 255px;
+            top: 1665px;
+            left: 245px;
             content: "";
             display: inline-block;
-            width: 140px;
+            width: 135px;
             height: 2px;
             background-color: $marine;
         }
@@ -185,7 +186,7 @@ main {
         }
         .codes {
             display: flex;
-            gap: 20px;
+            gap: 50px;
             margin-top: 20px;
             position: relative;
             
@@ -198,7 +199,7 @@ main {
                 text-decoration: none;
                 }
         }
-        .codes::after {
+        .button_project::after {
             content: "";
             position: absolute;
             top: 30px;
@@ -208,7 +209,16 @@ main {
             height: 2px;
             background-color: $marine;
         }
-        /*Soy incapaz, por más info que busco, de colocar otra línea debajo de cada view code*/    
+        .button_code::after {
+            content: "";
+            position: absolute;
+            top: 30px;
+            left: 185px;
+            display: inline-block;
+            width: 100px;
+            height: 2px;
+            background-color: $marine;
+        }
     }
     .contact {
         margin-top: 100px;
@@ -240,25 +250,96 @@ main {
         }
         .formulario {
             margin-top: 50px;
+            position: relative;
             label {
                 font-family: "Space Grotesk", sans-serif;
                 font-size: 16px;
+                font-weight: 100;
                 color: $greylight;
             }
+            .button_contact{
+                font-family: "Space Grotesk", sans-serif;
+                font-size: 16px;
+                font-weight: 700;
+                color: white;
+                background-color: $greymedium;
+                border: none;
+                position: absolute;
+                letter-spacing: 2px;
+                left: 200px;
+                top: 325px;
+            }
+            .button_contact::after {
+                content: "";
+                position: relative;
+                top: 0px;
+                left: 0px;
+                display: inline-block;
+                width: 150px;
+                height: 2px;
+                background-color: $marine;
+            }
+        }
+        .formulario::after {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 450px;
+        content: "";
+        display: inline-block;
+        width: 370px;
+        height: 1px;
+        background-color: white;
         }
         .formulario form {
             margin-top: 50px;
             display: flex;
             flex-direction: column;
+            gap: 25px;
+            label {
+                padding-left: 25px;
+            }
             input {
                 border: none;
                 background-color: $greymedium;
+                border-bottom: 2px solid $greylight;
+            }
+            input:focus {
+                outline: none;
+                background-color: $greydark;
             }
             textarea {
                 border: none;
                 background-color: $greymedium;
+                border-bottom: 2px solid $greylight;
+            }
+            textarea:focus {
+                outline: none;
+                background-color: $greydark;
             }
         }
-
+        .logotipo_footer {
+            display: flex;
+            justify-content: center;
+            margin-top: 250px;
+        }
+        .social_footer {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 35px;
+        padding-bottom: 50px;
     }
+    }
+}
+/*Entiendo que esta no es la mejor forma de hacer esto*/
+.decoration_footer {
+    position: absolute;
+    bottom: -4250px;
+}
+.decoration_projects {
+    position: absolute;
+    transform: scaleX(-1);
+    right: 0;
+    bottom: -700px;
 }
