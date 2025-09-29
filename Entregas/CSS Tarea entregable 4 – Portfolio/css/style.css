@@ -1,19 +1,302 @@
-/* Error: Undefined variable.
- *   ,
- * 2 |     background-color: $greydark;
- *   |                       ^^^^^^^^^
- *   '
- *   sass\layout\_body.scss 2:23   @use
- *   sass\layout\_layout.scss 9:1  @use
- *   sass\style.scss 5:1           root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 2 \2502      background-color: $greydark;\d\a   \2502                        ^^^^^^^^^\a   \2575 \a   sass\\layout\\_body.scss 2:23   @use\a   sass\\layout\\_layout.scss 9:1  @use\a   sass\\style.scss 5:1           root stylesheet";
+@charset "UTF-8";
+/*COLORES*/
+/*responsive*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+
+.header .logotipo {
+  display: flex;
+  justify-content: center;
+  margin-top: 45px;
+}
+.header .logotipo img {
+  width: 150px;
+}
+.header .social {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  gap: 30px;
+}
+.header .social img {
+  width: 20px;
+}
+.header .decoration .decoration_01 {
+  position: absolute;
+  left: 0;
+  top: 150px;
+}
+.header .decoration .decoration_02 {
+  position: absolute;
+  right: 0;
+  top: 330px;
+}
+
+main .container {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+main .foto {
+  display: flex;
+  justify-content: center;
+}
+main .foto img {
+  position: absolute;
+  width: 200px;
+  top: 0;
+}
+main .hero_01 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 380px;
+}
+main .hero_01 h1 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 40px;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  line-height: 40px;
+}
+main .hero_01 h1::after {
+  position: absolute;
+  top: 580px;
+  left: 120px;
+  content: "";
+  display: inline-block;
+  width: 235px;
+  height: 5px;
+  background-color: #4EE1A0;
+}
+main .hero_01 .subtitle {
+  margin-top: 30px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 18px;
+  font-optical-sizing: auto;
+  font-weight: regular;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+}
+main .hero_01 .contact {
+  background-color: #151515;
+  border: none;
+  margin-top: 30px;
+}
+main .hero_01 .contact a {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 18px;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 3px;
+}
+main .hero_01 .contact::after {
+  position: absolute;
+  top: 765px;
+  left: 135px;
+  content: "";
+  display: inline-block;
+  width: 140px;
+  height: 2px;
+  background-color: #4EE1A0;
+}
+main .lenguajes::before {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 850px;
+  content: "";
+  display: inline-block;
+  width: 370px;
+  height: 1px;
+  background-color: white;
+}
+main .lenguajes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+}
+main .lenguajes h2 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 32px;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  margin-top: 30px;
+}
+main .lenguajes p {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 18px;
+  font-optical-sizing: auto;
+  font-weight: regular;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+}
+main .lenguajes::after {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 1550px;
+  content: "";
+  display: inline-block;
+  width: 370px;
+  height: 1px;
+  background-color: white;
+}
+main .header_projects {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 120px;
+}
+main .header_projects h2 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 40px;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  margin-top: 30px;
+}
+main .header_projects .contact {
+  background-color: #151515;
+  border: none;
+  margin-top: 30px;
+}
+main .header_projects .contact a {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 18px;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 3px;
+}
+main .header_projects .contact::after {
+  position: absolute;
+  top: 1700px;
+  left: 255px;
+  content: "";
+  display: inline-block;
+  width: 140px;
+  height: 2px;
+  background-color: #4EE1A0;
+}
+main .articulos img {
+  max-width: 100%;
+  margin-top: 65px;
+}
+main .articulos h3 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 25px;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  color: white;
+  margin-top: 15px;
+}
+main .articulos .buttons {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+}
+main .articulos .buttons a {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 18px;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  color: #d9d9d9;
+  text-decoration: none;
+}
+main .articulos .codes {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  position: relative;
+}
+main .articulos .codes a {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: #d9d9d9;
+  text-decoration: none;
+}
+main .articulos .codes::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: -5px;
+  display: inline-block;
+  width: 140px;
+  height: 2px;
+  background-color: #4EE1A0;
+}
+main .articulos {
+  /*Soy incapaz, por más info que busco, de colocar otra línea debajo de cada view code*/
+}
+main .contact {
+  margin-top: 100px;
+  padding-top: 50px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: #242424;
+}
+main .contact .contact_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .contact .contact_info h2 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #d9d9d9;
+  text-decoration: none;
+}
+main .contact .contact_info p {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 16px;
+  font-weight: regular;
+  color: #d9d9d9;
+  text-decoration: none;
+  text-align: center;
+  max-width: 90%;
+  margin-top: 15px;
+}
+main .contact .formulario {
+  margin-top: 50px;
+}
+main .contact .formulario label {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 16px;
+  color: #d9d9d9;
+}
+main .contact .formulario form {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+main .contact .formulario form input {
+  border: none;
+  background-color: #242424;
+}
+main .contact .formulario form textarea {
+  border: none;
+  background-color: #242424;
+}
+
+body {
+  background-color: #151515;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,31 @@
+.header {
+    .logotipo {
+        display: flex;
+        justify-content: center;
+        margin-top: 45px;
+    }
+    .logotipo img {
+        width: 150px;
+    }
+    .social {
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
+        gap: 30px;
+        img {
+            width: 20px;
+        }
+    }
+    .decoration {
+        .decoration_01 {
+            position: absolute;
+            left: 0;
+            top: 150px;
+        }
+        .decoration_02 {
+            position: absolute;
+            right: 0;
+            top: 330px;
+        }
+    }
+}
