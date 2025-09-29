@@ -1,0 +1,95 @@
+.footer {
+    display: block;
+    max-width: 100%;
+    background-color: $black;
+    padding-bottom: 50px;
+    
+    .footer_container {
+        margin-top: 130px;
+        margin-right: 45px;
+        margin-left: 45px;
+        padding-top: 45px;
+        h3 {
+            font-family: $primary_font;
+            font-size: 25px;
+            font-weight: 900;
+            line-height: 25px;
+            color: white;
+        }
+        p {
+            font-family: $secundary_font;
+            font-size: 17px;
+            font-weight: 200;
+            margin-top: 30px;
+            line-height: 30px;
+            color: white;
+        }
+        .social {
+            padding-top: 45px;
+            display: flex;
+            justify-content: flex-start;
+            gap: 25px;
+            img {
+                width: 20px;
+            }
+        }
+        @include breakpoint(desktop) {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-left: 100px;
+        margin-right: 100px;
+        
+        .footer_title h3 {
+            width: 50%;
+            font-size: 35px;
+            line-height: 35px;
+            padding-right: 15px;
+        }
+        .footer_subtitle {
+            max-width: 25%;
+            p {
+                font-size: 14px;
+                margin-top: 0;
+                margin-right: 20px;
+                line-height: 25px;
+            }
+        }
+        .social {
+            padding-top: 0;
+            margin-bottom: 100px;
+            padding-left: 50px;
+        }
+    }
+    }
+
+    /*No logro modificar la parte del footer para que se mueva
+    a la izquierda y veo que si modifico el footer_tittle-widht
+    en tablet se me modifica en DESKTOP, cosa que entiendo
+    no debería. */
+    
+    @include breakpoint(tablet) {
+    .footer_container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 100px;
+        gap: 75px;
+        p {
+            margin-top: 0;
+            max-width: 85%;
+        }
+        .footer_title {
+            width: 50%;
+        }
+        .social {
+            padding-top: 0;
+        }
+        }
+   
+    
+    }
+
+    
+}
+
