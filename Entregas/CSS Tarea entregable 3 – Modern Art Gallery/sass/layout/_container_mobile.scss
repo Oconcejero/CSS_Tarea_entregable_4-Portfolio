@@ -1,0 +1,248 @@
+
+.container_mobile {
+    max-width: 100%;
+    .sec_001 {
+        max-width: 100%;
+    .button {
+        display: flex;
+        position: absolute;
+        a {
+            display: inline-block;
+            background-color: $black;
+            color: white;
+            padding: 25px 45px;
+            font-family: $primary_font;
+            letter-spacing: 5px;
+            font-size: 24px;
+            text-decoration: none;            
+        }
+        img {
+            display: inline-block;
+            padding: 25px 25px;
+            background-color: $gold;
+        }
+    }
+    .button:hover {
+        display: flex; 
+        a {
+            display: inline-block;
+            background-color: $gold;
+            color: white;
+            padding: 25px 45px;
+            font-family: $primary_font;
+            letter-spacing: 5px;
+            font-size: 24px;
+            text-decoration: none;            
+        }
+        img {
+            display: inline-block;
+            padding: 25px 25px;
+            background-color: black;
+        }
+    }
+    .mapa_mobile {
+        width: 100%;
+        position: relative;
+        z-index: -1;
+        /*Hay una raya inferior que no entiendo como quitarla o de donde sale */     
+    }
+    .marc_map {
+        position: absolute;
+        top: 265px;
+        left: 172px;
+    }
+    .mapa_desktop {
+        display: none;
+    }
+    .mapa_tablet {
+        display: none;
+    }
+   
+    
+    @include breakpoint(tablet) {
+        .mapa_mobile {
+            display: none;
+        }
+        .mapa_tablet {
+            display: block;
+        }
+        .mapa_desktop {
+            display: none;
+        }
+        .button {
+            margin-left: 50px;
+            }
+        img.mapa_tablet {
+            width: 100%;
+            position: relative;
+            right: 0px;
+            z-index: -1; 
+            }
+        .marc_map {
+            position: absolute;
+            top: 279px;
+            left: 376px;
+            }
+        }
+    @include breakpoint(desktop) {
+       .mapa_mobile {
+            display: none;
+        }
+        .mapa_tablet {
+            display: none;
+        }
+        .mapa_desktop {
+            display: block;
+        }
+
+        .mapa_desktop {
+            display: block;
+            max-width: 100%;
+            position: relative;
+            z-index: -1;
+            }
+        .button {
+            margin-left: 150px;
+            }
+        .marc_map {
+            position: absolute;
+            top: 264px;
+            left: 684px;
+            }
+        }  
+    }
+    .sec_002 {
+        background-color: $black;
+        margin-top: 0;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+        .text_01 {
+            font-family: $primary_font;
+            color: white;
+            font-size: 40px;
+        }
+        .text_02 {
+            font-family: $primary_font;
+            color: $gold;
+            font-size: 35px;
+            margin-top: 40px;
+        }
+        .text_03 {
+            font-family: $secundary_font;
+            color: white;
+            font-size: 20px;
+            font-weight: 100;
+            margin-top: 30px;
+            .description {
+                margin-top: 30px;
+            }
+        }
+        @include breakpoint(tablet) {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-bottom: 100px;
+            padding-top: 80px;
+            .text_01 {
+                margin-right: 125px;
+                line-height: 75px;
+            }
+            .text_02 {
+                margin-top: 0;
+            }
+            .description {
+                margin-right: 50px;
+            }
+        }
+        @include breakpoint(desktop) {
+            .text_01 {
+                max-width: 40%;
+                padding-left: 150px;
+                padding-right: 500px;
+            }
+            .text_descripton {
+                padding-right: 50px;
+            }
+        }
+    }
+    .sec_003 {
+        background-color: $gold;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 30px;
+        padding-right: 30px;
+        h3 {
+                font-family: $primary_font;
+                font-size: 30px;
+                font-weight: 900;
+                line-height: 30px;
+                color: black;
+            }
+        p {
+                font-family: $secundary_font;
+                font-size: 17px;
+                font-weight: 200;
+                margin-top: 30px;
+                line-height: 30px;
+                color: black;
+            }
+        .icons {
+                padding-top: 45px;
+                display: flex;
+                justify-content: flex-start;
+                gap: 25px;
+                img {
+                    width: 25px;
+                    
+                }
+            }
+        @include breakpoint(tablet) {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                padding-right: 50px;
+                padding-left: 50px;
+                .text_01 {
+                    padding-right: 20px;
+                    h3 {
+                        font-size: 20px;
+                        line-height: 25px;
+                    }
+                }
+                .text_02 {
+                    p {
+                        margin-top: 0;
+                    }
+                    width: 300px;
+                }
+                .icons {
+                    padding-top: 0;
+                }
+                
+            }
+        @include breakpoint(desktop) {
+            justify-content: space-between;
+                padding-right: 200px;
+                padding-left: 200px;
+                padding-bottom: 50px;
+                .text_01 {
+                
+                h3 {
+                    line-height: 20px;
+                }            
+            }
+            .text_02 {
+                
+                width: 400px;
+                p {
+                    max-width: 100%;   
+                }
+                
+            }
+            }
+    }  
+}
