@@ -63,12 +63,25 @@
     top: 476px;
   }
 }
+@media (min-width: 1200px) {
+  .header {
+    max-width: 100%;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .header .social {
+    margin-right: -750px;
+  }
+}
 main .container {
   max-width: 100%;
   margin-left: 20px;
   margin-right: 20px;
 }
 main .foto .foto_hero_tablet {
+  display: none;
+}
+main .foto .foto_hero_desktop {
   display: none;
 }
 main .foto {
@@ -240,13 +253,13 @@ main .articulos .buttons a {
   color: #d9d9d9;
   text-decoration: none;
 }
-main .articulos .codes {
+main .articulos .desktop_action {
   display: flex;
   gap: 50px;
   margin-top: 20px;
   position: relative;
 }
-main .articulos .codes a {
+main .articulos .desktop_action a {
   font-family: "Space Grotesk", sans-serif;
   font-size: 16px;
   letter-spacing: 2px;
@@ -258,7 +271,7 @@ main .articulos .codes a {
   text-underline-offset: 15px;
   text-decoration-thickness: 3px;
 }
-main .articulos .codes a:hover {
+main .articulos .desktop_action a:hover {
   color: #4EE1A0;
 }
 main .contact {
@@ -517,6 +530,70 @@ main .contact .social_footer {
     transform: scaleX(-1);
     right: 0;
     bottom: 166px;
+  }
+}
+@media (min-width: 1200px) {
+  main .container {
+    max-width: 100%;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  main .container .container_hero .foto .foto_hero_tablet {
+    display: none;
+  }
+  main .container .container_hero .foto .foto_hero_desktop {
+    display: block;
+    width: 400px;
+    margin-right: 500px;
+    z-index: -1;
+  }
+  main .container .container_hero .hero_01 {
+    max-width: 60%;
+  }
+  main .container .container_hero .hero_01 h1 {
+    max-width: 85%;
+    white-space: normal;
+  }
+  main .container .container_hero .hero_01 p {
+    max-width: 60%;
+  }
+  main .container .container_hero .hero_01 .contact {
+    margin-left: -102px;
+  }
+  main .container .lenguajes::before {
+    top: 720px;
+    width: 85%;
+  }
+  main .container .lenguajes {
+    padding-top: 200px;
+    grid-template-columns: 33% 33% 33%;
+  }
+  main .container .projects .articulos article {
+    position: relative;
+  }
+  main .container .projects .articulos article .codes {
+    display: none;
+  }
+  main .container .projects .articulos article .desktop_action {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 35%;
+    left: 40%;
+    z-index: 2;
+    position: absolute;
+  }
+  main .container .projects .articulos article:hover .codes {
+    display: block;
+    transition: all 0.3s ease;
+  }
+  main .container .projects .articulos article:hover img {
+    opacity: 0.3;
+    transition: all 0.3s ease;
+  }
+  main .contact {
+    display: flex;
   }
 }
 body {
