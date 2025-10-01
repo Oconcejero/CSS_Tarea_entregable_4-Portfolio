@@ -27,6 +27,12 @@
             right: 0;
             top: 330px;
         }
+        .decoration_oval {
+            display: none;
+        }
+        .decoration_04 {
+            display: none;
+        }
     }
 }
 @include breakpoint(tablet) {
@@ -67,5 +73,28 @@
         .social {
             margin-right: -750px;
         }
+    .decoration {
+        .decoration_01 {
+            display: none;
+            }
+        .decoration_02 {
+            display: none;
+            }
+        .decoration_oval {
+            display: block;
+            position: absolute;
+            width: 95px;
+            right: 495px;
+            top: 478px;
+        }
+        .decoration_04 {
+            display: block;
+            position: absolute;
+            width: 300px;
+            left: 0px;
+            top: 100px
+        }
     }
+    }
+
 }

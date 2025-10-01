@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* RESPONSIVE */
 /*COLORES*/
 /*responsive*/
@@ -33,6 +34,12 @@
   position: absolute;
   right: 0;
   top: 330px;
+}
+.header .decoration .decoration_oval {
+  display: none;
+}
+.header .decoration .decoration_04 {
+  display: none;
 }
 
 @media (min-width: 768px) {
@@ -71,6 +78,26 @@
   }
   .header .social {
     margin-right: -750px;
+  }
+  .header .decoration .decoration_01 {
+    display: none;
+  }
+  .header .decoration .decoration_02 {
+    display: none;
+  }
+  .header .decoration .decoration_oval {
+    display: block;
+    position: absolute;
+    width: 95px;
+    right: 495px;
+    top: 478px;
+  }
+  .header .decoration .decoration_04 {
+    display: block;
+    position: absolute;
+    width: 300px;
+    left: 0px;
+    top: 100px;
   }
 }
 main .container {
@@ -533,6 +560,9 @@ main .contact .social_footer {
   }
 }
 @media (min-width: 1200px) {
+  main {
+    max-width: 100%;
+  }
   main .container {
     max-width: 100%;
     margin-left: 100px;
@@ -558,7 +588,8 @@ main .contact .social_footer {
     max-width: 60%;
   }
   main .container .container_hero .hero_01 .contact {
-    margin-left: -102px;
+    margin-top: 50px;
+    margin-left: -20px;
   }
   main .container .lenguajes::before {
     top: 720px;
@@ -567,6 +598,9 @@ main .contact .social_footer {
   main .container .lenguajes {
     padding-top: 200px;
     grid-template-columns: 33% 33% 33%;
+  }
+  main .container .projects .contact {
+    margin-top: 45px;
   }
   main .container .projects .articulos article {
     position: relative;
@@ -593,11 +627,93 @@ main .contact .social_footer {
     transition: all 0.3s ease;
   }
   main .contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 70% 30%;
+    grid-gap: 20px 20px;
+    margin-top: 50px;
+    padding-top: 0px;
+  }
+  main .contact .contact_info {
+    margin-left: 25px;
+    padding-right: 200px;
+    padding-left: 50px;
+  }
+  main .contact .contact_info h2 {
+    padding-right: 250px;
+    text-align: left;
+  }
+  main .contact .contact_info p {
+    text-align: left;
+    max-width: 100%;
+  }
+  main .contact .footer_logos {
+    grid-column: span 2;
+    margin-top: 100px;
+    padding-bottom: 75px;
+    padding-left: 50px;
+    padding-right: 150px;
+  }
+  main .contact .footer_logos::before {
     display: flex;
+    margin-bottom: 80px;
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 84%;
+    height: 1px;
+    left: 60px;
+    background-color: white;
+  }
+  main .contact .formulario .button_contact {
+    left: 400px;
+    top: 390px;
+  }
+  main .contact .formulario input[type=email]:invalid {
+    border-bottom: 2px solid red;
+  }
+  main .contact .formulario input[type=email]:invalid + .error-message::before {
+    content: "Sorry, invalid format here";
+    color: red;
+    position: absolute;
+    top: 55%;
+    right: 23%;
+    font-size: 12px;
+    display: block;
+  }
+  main .contact .formulario input[type=email]:valid + .error-message::before {
+    content: "";
+    display: none;
+  }
+  main .contact {
+    /*No encuentro la forma de cambiar el color de los iconos svg
+    depués de ver vídeos y vídeos que no sea cambiando las imágenes*/
+  }
+  main .contact .social_footer img:hover {
+    fill: #4EE1A0;
+  }
+  .decoration_projects {
+    position: absolute;
+    transform: scaleX(-1);
+    right: 0;
+    top: 950px;
+  }
+  .decoration_footer {
+    position: absolute;
+    bottom: -2549px;
+    pointer-events: none;
   }
 }
+/* Tengo un PROLEMA SERIO con los espacios derechos e inferiores. En ocasiones,
+sin llegar a tocar nada me aparecen espacios enormes que no consigo controlar.
+hay algún motivo por el que pueda pasar esto? */
 body {
   background-color: #151515;
+}
+@media (min-width: 1200px) {
+  body {
+    height: 1500px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

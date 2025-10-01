@@ -469,6 +469,7 @@ main {
 }
 @include breakpoint(desktop) {
     main {
+        max-width: 100%;
         .container {
             max-width: 100%;
             margin-left: 100px;
@@ -495,7 +496,8 @@ main {
                         max-width: 60%;
                     }
                     .contact {
-                        margin-left: -102px;
+                        margin-top: 50px;
+                        margin-left: -20px;
                     }
                 }
             }
@@ -508,6 +510,9 @@ main {
                 grid-template-columns: 33% 33% 33%;
             }
             .projects {
+                .contact {
+                    margin-top: 45px;
+                }
                 .articulos {
                     article {
                         position: relative;
@@ -540,7 +545,86 @@ main {
             }
         }
         .contact {
-            display: flex;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 70% 30%;
+            grid-gap: 20px 20px;
+            margin-top: 50px;
+            padding-top: 0px;
+            .contact_info {
+                margin-left: 25px;
+                padding-right: 200px;
+                padding-left: 50px;
+                h2 {
+                    padding-right: 250px;
+                    text-align: left;
+                }
+                p {
+                    text-align: left;
+                    max-width: 100%;
+                }
+            }
+            .footer_logos {
+                grid-column: span 2;
+                margin-top: 100px;
+                padding-bottom: 75px;
+                padding-left: 50px;
+                padding-right: 150px;
+            }
+            .footer_logos::before {
+                display: flex;
+                margin-bottom: 80px;
+                position: absolute;
+                content: "";
+                display: inline-block;
+                width: 84%;
+                height: 1px;
+                left: 60px;
+                background-color: white;
+            }
+            .formulario {
+                .button_contact {
+                    left: 400px;
+                    top: 390px;
+                }
+                input[type="email"]:invalid {
+                    border-bottom: 2px solid red;
+                }
+                input[type="email"]:invalid + .error-message::before {
+                    content: 'Sorry, invalid format here';
+                    color: red;
+                    position: absolute;
+                    top: 55%;
+                    right: 23%;
+                    font-size: 12px;
+                    display: block;
+                }
+                input[type="email"]:valid + .error-message::before {
+                    content: '';
+                    display: none;
+                }
+            }
+            /*No encuentro la forma de cambiar el color de los iconos svg
+            depués de ver vídeos y vídeos que no sea cambiando las imágenes*/
+            .social_footer {
+                img:hover {
+                    fill: $marine;
+                }
+            }
         }
     }
+    .decoration_projects {
+        position: absolute;
+        transform: scaleX(-1);
+        right: 0;
+        top: 950px;
+    }
+    .decoration_footer {
+        position: absolute;
+        bottom: -2549px;
+        pointer-events: none;
+    }
 }
+/* Tengo un PROLEMA SERIO con los espacios derechos e inferiores. En ocasiones,
+sin llegar a tocar nada me aparecen espacios enormes que no consigo controlar.
+hay algún motivo por el que pueda pasar esto? */
