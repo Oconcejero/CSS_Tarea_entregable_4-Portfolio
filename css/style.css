@@ -1,3 +1,25 @@
+<<<<<<< HEAD
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 2 | @use 'functions';
+ *   | ^^^^^^^^^^^^^^^^
+ *   '
+ *   sass\abstracts\_abstracts.scss 2:1  @use
+ *   sass\style.scss 1:1                 root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 2 \2502  @use 'functions';\d\a   \2502  ^^^^^^^^^^^^^^^^\a   \2575 \a   sass\\abstracts\\_abstracts.scss 2:1  @use\a   sass\\style.scss 1:1                 root stylesheet";
+=======
+@charset "UTF-8";
+/* RESPONSIVE */
+/*COLORES*/
 /*responsive*/
 * {
   padding: 0;
@@ -5,8 +27,711 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: blue;
+.header .logotipo {
+  display: flex;
+  justify-content: center;
+  margin-top: 45px;
+}
+.header .logotipo img {
+  width: 150px;
+}
+.header .social {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  gap: 30px;
+}
+.header .social img {
+  width: 20px;
+}
+.header .decoration .decoration_01 {
+  position: absolute;
+  left: 0;
+  top: 150px;
+}
+.header .decoration .decoration_02 {
+  position: absolute;
+  right: 0;
+  top: 330px;
+}
+.header .decoration .decoration_oval {
+  display: none;
+}
+.header .decoration .decoration_04 {
+  display: none;
 }
 
-/*# sourceMappingURL=style.css.map */
+@media (min-width: 768px) {
+  .header {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+  }
+  .header .logotipo {
+    justify-content: flex-start;
+    padding-left: 25px;
+    margin-top: 25px;
+  }
+  .header .social {
+    justify-content: flex-end;
+    margin-right: -422px;
+    margin-top: 25px;
+  }
+  .header .decoration .decoration_01 {
+    position: absolute;
+    left: 0;
+    top: 68px;
+  }
+  .header .decoration .decoration_02 {
+    position: absolute;
+    width: 60px;
+    right: 0;
+    top: 476px;
+  }
+}
+@media (min-width: 1200px) {
+  .header {
+    max-width: 100%;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .header .social {
+    margin-right: -750px;
+  }
+  .header .decoration .decoration_01 {
+    display: none;
+  }
+  .header .decoration .decoration_02 {
+    display: none;
+  }
+  .header .decoration .decoration_oval {
+    display: block;
+    position: absolute;
+    width: 95px;
+    right: 495px;
+    top: 478px;
+  }
+  .header .decoration .decoration_04 {
+    display: block;
+    position: absolute;
+    width: 300px;
+    left: 0px;
+    top: 100px;
+  }
+}
+main .container {
+  max-width: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+main .foto .foto_hero_tablet {
+  display: none;
+}
+main .foto .foto_hero_desktop {
+  display: none;
+}
+main .foto {
+  display: flex;
+  justify-content: center;
+}
+main .foto img {
+  position: absolute;
+  width: 200px;
+  top: 0;
+}
+main .hero_01 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 380px;
+}
+main .hero_01 h1 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 40px;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  line-height: 40px;
+}
+main .hero_01 h1 span {
+  text-decoration-line: underline;
+  text-decoration-color: #4EE1A0;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 4px;
+}
+main .hero_01 .subtitle {
+  margin-top: 30px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 18px;
+  font-optical-sizing: auto;
+  font-weight: regular;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+}
+main .hero_01 .contact {
+  background-color: #151515;
+  border: none;
+  margin-top: 0;
+}
+main .hero_01 .contact a {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 16px;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  color: #d9d9d9;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 3px;
+  text-decoration-line: underline;
+  text-decoration-color: #4EE1A0;
+  text-underline-offset: 15px;
+  text-decoration-thickness: 3px;
+}
+main .hero_01 .contact a:hover {
+  color: #4EE1A0;
+}
+main .lenguajes::before {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 850px;
+  content: "";
+  display: inline-block;
+  width: 370px;
+  height: 1px;
+  background-color: white;
+}
+main .lenguajes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+main .lenguajes h2 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 32px;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  margin-top: 30px;
+}
+main .lenguajes p {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 18px;
+  font-optical-sizing: auto;
+  font-weight: regular;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+}
+main .lenguajes::after {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 1550px;
+  content: "";
+  display: inline-block;
+  width: 370px;
+  height: 1px;
+  background-color: white;
+}
+main .header_projects {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 120px;
+}
+main .header_projects h2 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 40px;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  margin-top: 30px;
+}
+main .header_projects .contact {
+  background-color: #151515;
+  border: none;
+  margin-top: -10px;
+}
+main .header_projects .contact a {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 16px;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  color: #d9d9d9;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 3px;
+  text-decoration-line: underline;
+  text-decoration-color: #4EE1A0;
+  text-underline-offset: 15px;
+  text-decoration-thickness: 3px;
+}
+main .header_projects .contact a:hover {
+  color: #4EE1A0;
+}
+main .articulos img {
+  max-width: 100%;
+  margin-top: 65px;
+}
+main .articulos h3 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 25px;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  color: white;
+  margin-top: 15px;
+}
+main .articulos .buttons {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+}
+main .articulos .buttons a {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 18px;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  color: #d9d9d9;
+  text-decoration: none;
+}
+main .articulos .desktop_action {
+  display: flex;
+  gap: 50px;
+  margin-top: 20px;
+  position: relative;
+}
+main .articulos .desktop_action a {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: #d9d9d9;
+  text-decoration: none;
+  text-decoration-line: underline;
+  text-decoration-color: #4EE1A0;
+  text-underline-offset: 15px;
+  text-decoration-thickness: 3px;
+}
+main .articulos .desktop_action a:hover {
+  color: #4EE1A0;
+}
+main .contact {
+  margin-top: 100px;
+  padding-top: 50px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: #242424;
+}
+main .contact .contact_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .contact .contact_info h2 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #d9d9d9;
+  text-decoration: none;
+}
+main .contact .contact_info p {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 16px;
+  font-weight: regular;
+  color: #d9d9d9;
+  text-decoration: none;
+  text-align: center;
+  max-width: 90%;
+  margin-top: 15px;
+}
+main .contact .formulario {
+  margin-top: 50px;
+  position: relative;
+}
+main .contact .formulario label {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  color: #d9d9d9;
+}
+main .contact .formulario .button_contact {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  background-color: #242424;
+  border: none;
+  position: absolute;
+  letter-spacing: 2px;
+  left: 200px;
+  top: 325px;
+  text-decoration-line: underline;
+  text-decoration-color: #4EE1A0;
+  text-underline-offset: 15px;
+  text-decoration-thickness: 3px;
+}
+main .contact .formulario .button_contact:hover {
+  color: #4EE1A0;
+}
+main .contact .formulario::after {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 450px;
+  content: "";
+  display: inline-block;
+  width: 370px;
+  height: 1px;
+  background-color: white;
+}
+main .contact .formulario form {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+main .contact .formulario form label {
+  padding-left: 25px;
+}
+main .contact .formulario form input {
+  border: none;
+  background-color: #242424;
+  border-bottom: 2px solid #d9d9d9;
+  color: #d9d9d9;
+}
+main .contact .formulario form input:focus {
+  outline: none;
+  border-bottom: 2px solid #4EE1A0;
+}
+main .contact .formulario form textarea {
+  border: none;
+  background-color: #242424;
+  border-bottom: 2px solid #d9d9d9;
+  color: #d9d9d9;
+}
+main .contact .formulario form textarea:focus {
+  outline: none;
+  border-bottom: 2px solid #4EE1A0;
+}
+main .contact .logotipo_footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 250px;
+}
+main .contact .social_footer {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 35px;
+  padding-bottom: 50px;
+}
+
+/*Entiendo que esta no es la mejor forma de hacer esto*/
+.decoration_footer {
+  position: absolute;
+  bottom: -4250px;
+  pointer-events: none;
+}
+
+.decoration_projects {
+  position: absolute;
+  transform: scaleX(-1);
+  right: 0;
+  bottom: -700px;
+}
+
+@media (min-width: 768px) {
+  main {
+    max-width: 100%;
+  }
+  main .container_hero {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  main .container_hero .foto .foto_hero_mobile {
+    display: none;
+  }
+  main .container_hero .foto .foto_hero_tablet {
+    display: block;
+    width: 322px;
+    margin-right: 280px;
+    z-index: -1;
+  }
+  main .container_hero .hero_01 {
+    max-width: 55%;
+    margin-top: 85px;
+  }
+  main .container_hero .hero_01 h1 {
+    text-align: left;
+    font-size: 72px;
+    line-height: 72px;
+    margin-right: -45px;
+    white-space: pre-line;
+  }
+  main .container_hero .hero_01 p {
+    margin-top: 55px;
+    text-align: left;
+  }
+  main .container_hero .hero_01 .contact {
+    max-width: 45%;
+    margin-left: -25px;
+  }
+  main .lenguajes::before {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 650px;
+    content: "";
+    display: inline-block;
+    width: 95%;
+    height: 1px;
+    background-color: white;
+  }
+  main .lenguajes::after {
+    display: none;
+  }
+  main .lenguajes {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: start;
+  }
+  main .lenguajes h2 {
+    text-align: left;
+  }
+  main .lenguajes p {
+    text-align: left;
+    font-size: 12px;
+  }
+  main .projects .header_projects {
+    margin-top: 50px;
+  }
+  main .projects .articulos {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  main .contact .contact_info {
+    justify-content: center;
+    width: 100%;
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+  main .contact .contact_info h2 {
+    font-size: 55px;
+  }
+  main .contact .contact_info p {
+    font-size: 18px;
+  }
+  main .contact .formulario {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+  main .contact .formulario .button_contact {
+    left: 491px;
+  }
+  main .contact .footer_logos::before {
+    display: flex;
+    margin-bottom: 80px;
+    align-items: center;
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 95%;
+    height: 1px;
+    background-color: white;
+  }
+  main .contact .footer_logos {
+    margin-left: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 200px;
+    padding-bottom: 30px;
+    gap: 250px;
+  }
+  main .contact .footer_logos .logotipo_footer {
+    margin-top: 0;
+  }
+  main .contact .footer_logos .social_footer {
+    margin-top: 0;
+    padding-bottom: 0;
+  }
+  main .contact .formulario::after {
+    display: none;
+  }
+  .decoration_footer {
+    position: absolute;
+    bottom: -2149px;
+    pointer-events: none;
+  }
+  .decoration_projects {
+    position: absolute;
+    transform: scaleX(-1);
+    right: 0;
+    bottom: 166px;
+  }
+}
+@media (min-width: 1200px) {
+  main {
+    max-width: 100%;
+  }
+  main .container {
+    max-width: 100%;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  main .container .container_hero .foto .foto_hero_tablet {
+    display: none;
+  }
+  main .container .container_hero .foto .foto_hero_desktop {
+    display: block;
+    width: 400px;
+    margin-right: 500px;
+    z-index: -1;
+  }
+  main .container .container_hero .hero_01 {
+    max-width: 60%;
+  }
+  main .container .container_hero .hero_01 h1 {
+    max-width: 85%;
+    white-space: normal;
+  }
+  main .container .container_hero .hero_01 p {
+    max-width: 60%;
+  }
+  main .container .container_hero .hero_01 .contact {
+    margin-top: 50px;
+    margin-left: -20px;
+  }
+  main .container .lenguajes::before {
+    top: 720px;
+    width: 85%;
+  }
+  main .container .lenguajes {
+    padding-top: 200px;
+    grid-template-columns: 33% 33% 33%;
+  }
+  main .container .projects .contact {
+    margin-top: 45px;
+  }
+  main .container .projects .articulos article {
+    position: relative;
+  }
+  main .container .projects .articulos article .codes {
+    display: none;
+  }
+  main .container .projects .articulos article .desktop_action {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 35%;
+    left: 40%;
+    z-index: 2;
+    position: absolute;
+  }
+  main .container .projects .articulos article:hover .codes {
+    display: block;
+    transition: all 0.3s ease;
+  }
+  main .container .projects .articulos article:hover img {
+    opacity: 0.3;
+    transition: all 0.3s ease;
+  }
+  main .contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 70% 30%;
+    grid-gap: 20px 20px;
+    margin-top: 50px;
+    padding-top: 0px;
+  }
+  main .contact .contact_info {
+    margin-left: 25px;
+    padding-right: 200px;
+    padding-left: 50px;
+  }
+  main .contact .contact_info h2 {
+    padding-right: 250px;
+    text-align: left;
+  }
+  main .contact .contact_info p {
+    text-align: left;
+    max-width: 100%;
+  }
+  main .contact .footer_logos {
+    grid-column: span 2;
+    margin-top: 100px;
+    padding-bottom: 75px;
+    padding-left: 50px;
+    padding-right: 150px;
+  }
+  main .contact .footer_logos::before {
+    display: flex;
+    margin-bottom: 80px;
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 84%;
+    height: 1px;
+    left: 60px;
+    background-color: white;
+  }
+  main .contact .formulario .button_contact {
+    left: 400px;
+    top: 390px;
+  }
+  main .contact .formulario input[type=email]:invalid {
+    border-bottom: 2px solid red;
+  }
+  main .contact .formulario input[type=email]:invalid + .error-message::before {
+    content: "Sorry, invalid format here";
+    color: red;
+    position: absolute;
+    top: 55%;
+    right: 23%;
+    font-size: 12px;
+    display: block;
+  }
+  main .contact .formulario input[type=email]:valid + .error-message::before {
+    content: "";
+    display: none;
+  }
+  main .contact {
+    /*No encuentro la forma de cambiar el color de los iconos svg
+    depués de ver vídeos y vídeos que no sea cambiando las imágenes*/
+  }
+  main .contact .social_footer img:hover {
+    fill: #4EE1A0;
+  }
+  .decoration_projects {
+    position: absolute;
+    transform: scaleX(-1);
+    right: 0;
+    top: 950px;
+  }
+  .decoration_footer {
+    position: absolute;
+    bottom: -2549px;
+    pointer-events: none;
+  }
+}
+/* Tengo un PROLEMA SERIO con los espacios derechos e inferiores. En ocasiones,
+sin llegar a tocar nada me aparecen espacios enormes que no consigo controlar.
+hay algún motivo por el que pueda pasar esto? */
+body {
+  background-color: #151515;
+}
+@media (min-width: 1200px) {
+  body {
+    height: 1500px;
+  }
+>>>>>>> CSS-Tarea-entregable-4-Portfolio
+}

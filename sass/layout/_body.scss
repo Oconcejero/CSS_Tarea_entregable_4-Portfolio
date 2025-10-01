@@ -1,3 +1,6 @@
 body {
-    background-color: blue;
+    background-color: $greydark;
+    @include breakpoint(desktop) {
+        height: 1500px;
+    }
 }
