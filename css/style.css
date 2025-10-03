@@ -79,6 +79,18 @@
   .header .social {
     margin-right: -750px;
   }
+  .header .social .github:hover path {
+    fill: #4EE1A0;
+  }
+  .header .social .frontendmentor:hover path {
+    fill: #4EE1A0;
+  }
+  .header .social .linkedin:hover path {
+    fill: #4EE1A0;
+  }
+  .header .social .twitter:hover path {
+    fill: #4EE1A0;
+  }
   .header .decoration .decoration_01 {
     display: none;
   }
@@ -685,11 +697,16 @@ main .contact .social_footer {
     content: "";
     display: none;
   }
-  main .contact {
-    /*No encuentro la forma de cambiar el color de los iconos svg
-    depués de ver vídeos y vídeos que no sea cambiando las imágenes*/
+  main .contact .social_footer .github:hover path {
+    fill: #4EE1A0;
   }
-  main .contact .social_footer img:hover {
+  main .contact .social_footer .frontendmentor:hover path {
+    fill: #4EE1A0;
+  }
+  main .contact .social_footer .linkedin:hover path {
+    fill: #4EE1A0;
+  }
+  main .contact .social_footer .twitter:hover path {
     fill: #4EE1A0;
   }
   .decoration_projects {

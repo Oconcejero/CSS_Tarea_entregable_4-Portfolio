@@ -604,11 +604,18 @@ main {
                     display: none;
                 }
             }
-            /*No encuentro la forma de cambiar el color de los iconos svg
-            depués de ver vídeos y vídeos que no sea cambiando las imágenes*/
             .social_footer {
-                img:hover {
-                    fill: $marine;
+                .github:hover path {
+                    fill: #4EE1A0;
+                }
+                .frontendmentor:hover path {
+                    fill: #4EE1A0;
+                }
+                .linkedin:hover path {
+                    fill: #4EE1A0;
+                }
+                .twitter:hover path {
+                    fill: #4EE1A0;
                 }
             }
         }

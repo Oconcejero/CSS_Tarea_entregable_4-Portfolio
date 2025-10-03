@@ -62,7 +62,7 @@
                 right: 0;
                 top: 476px;
             }
-    }
+        }
     }
 }
 @include breakpoint(desktop) {
@@ -72,6 +72,20 @@
         margin-right: 100px;
         .social {
             margin-right: -750px;
+        }
+        .social {
+            .github:hover path {
+                fill: #4EE1A0;
+            }
+            .frontendmentor:hover path {
+                fill: #4EE1A0;
+            }
+            .linkedin:hover path {
+                fill: #4EE1A0;
+            }
+            .twitter:hover path {
+                fill: #4EE1A0;
+            }
         }
     .decoration {
         .decoration_01 {
